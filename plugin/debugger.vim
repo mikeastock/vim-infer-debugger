@@ -1,16 +1,17 @@
 let g:debugger_dictionary = {
-      \ '\.rb':             'require "pry"; binding.pry',
-      \ '\.rake':           'require "pry"; binding.pry',
+      \ '\.rb':             'binding.break',
+      \ '\.rake':           'binding.break,
       \ '\.ex$':            'require IEx; IEx.pry',
       \ '\.exs':            'require IEx; IEx.pry',
-      \ '\.erb':            '<% require "pry"; binding.pry %>',
-      \ '\.haml':           '- require "pry"; binding.pry',
+      \ '\.erb':            '<% binding.break %>',
+      \ '\.haml':           '- binding.break',
       \ '\.eex':            '<%= require IEx; IEx.pry %>',
       \ '\.coffee$':        'debugger',
-      \ '\.json\.jbuilder': 'require "pry"; binding.pry',
+      \ '\.json\.jbuilder': 'binding.break',
       \ '\.js$':            'debugger;',
       \ '\.jsx$':           'debugger;',
       \ '\.rs$':            'println!("{:?}", );',
+      \ '\.ts$':            'debugger;'
       \ '\.py$':            'import pdb; pdb.set_trace()',
       \ }
 
