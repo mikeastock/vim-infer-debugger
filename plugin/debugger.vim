@@ -11,7 +11,7 @@ let g:debugger_dictionary = {
       \ '\.js$':            'debugger;',
       \ '\.jsx$':           'debugger;',
       \ '\.rs$':            'println!("{:?}", );',
-      \ '\.ts$':            'debugger;'
+      \ '\.ts$':            'debugger;',
       \ '\.py$':            'import pdb; pdb.set_trace()',
       \ }
 
