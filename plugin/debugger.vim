@@ -1,6 +1,6 @@
 let g:debugger_dictionary = {
       \ '\.rb':             'binding.break',
-      \ '\.rake':           'binding.break,
+      \ '\.rake':           'binding.break',
       \ '\.ex$':            'require IEx; IEx.pry',
       \ '\.exs':            'require IEx; IEx.pry',
       \ '\.erb':            '<% binding.break %>',
